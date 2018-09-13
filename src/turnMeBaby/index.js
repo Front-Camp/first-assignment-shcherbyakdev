@@ -7,8 +7,11 @@
  * turnMeBaby('hello');     // 'olleh'
  * turnMeBaby('Some text'); // 'txet emoS'
  */
-const turnMeBaby = str => {
-  /* your logic here...*/
-};
+const turnMeBaby = str =>  {
+	if (typeof(str) !== 'string')
+		throw Error()
+
+	return str.split("").reverse().join("")
+}
 
 export default turnMeBaby;

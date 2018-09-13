@@ -7,7 +7,10 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
-};
+	if(isNaN(arr))
+		return false
+
+	return Math.max.apply(null, arr) 
+}
 
 export default max;

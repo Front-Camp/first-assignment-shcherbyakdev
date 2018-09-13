@@ -7,8 +7,6 @@
  * isObject([]);   // false
  * isObject(null); // false
  */
-const isObject = data => {
-  /* your logic here...*/
-};
+const isObject = data => (data instanceof Object && !(data instanceof Array)) ? true : false
 
 export default isObject;
